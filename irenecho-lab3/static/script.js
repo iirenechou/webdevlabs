@@ -30,7 +30,7 @@ var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 function findTheBanana(arr) {
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] === "Banana") {
-            // alert("Found the Banana in " + i);
+            alert("Found the Banana in " + i);
             return;
         }
     }
@@ -42,7 +42,7 @@ findTheBanana(L2);
 function findTheBananaForEach(arr, arrayName) {
     arr.forEach(function (item, index) {
         if (item === "Banana") {
-            // alert("We found a banana in the " + arrayName);
+            alert("We found a banana in the " + arrayName);
         }
     });
 }
@@ -80,48 +80,3 @@ function greetingFunc() {
 }
 
 greetingFunc();
-
-function addYear() {
-    document.getElementById("copyYear").textContent = new Date().getFullYear();
-}
-
-function showList() {
-    let list = document.getElementById("funList");
-    let button = document.getElementById("showButton");
-
-    list.style.display = "block";
-    button.style.display = "none";
-}
-
-$(document).ready(function() {
-    $("#toggleBio").click(function() {
-        if ($("#extraBio").is(":visible")) {
-            $("#extraBio").hide();
-            $("#toggleBio").text("Read More");
-        } else {
-            $("#extraBio").show();
-            $("#toggleBio").text("Read Less");
-        }
-    });
-});
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    let isValid = true;
-
-    function checkField(id, errorId, message) {
-        let field = document.getElementById(id);
-        let errorSpan = document.getElementById(errorId);
-        if (!field.checkValidity()) {
-            errorSpan.textContent = message;
-            isValid = false;
-        } else {
-            errorSpan.textContent = "";
-        }
-    }
-
-    checkField("name", "nameError", "Please enter your name.");
-    checkField("email", "emailError", "Please enter a valid email.");
-    checkField("message", "messageError", "Please enter a message.");
-
-    if (!isValid) event.preventDefault();
-});
