@@ -1,0 +1,87 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15;
+    font-weight: 100;
+    font-style: normal;
+    font-variant: normal;
+    padding: 5px;
+    margin: 5px;
+}
+
+#webname{
+    background-color: #ad70a2;
+}
+
+.nav, .a{
+    text-decoration: none;
+    color:lightpink;
+    margin-right: 15px;
+}
+
+table {
+    width: fit-content;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(100, 0, 70);
+}
+
+#seemorebtn {
+    display: block;
+}
+
+#funList{
+    display: none;
+}
+
+#toggleBio {
+    background-color: pink;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../static/script.js" defer></script>
+    <meta name="author" content="Irene Chou">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Irene Chou professional website">
+    <title>Contact Me - Irene</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  </head>
+<body onLoad="addYear()">
+    <header>
+        <h1 id="webname">Irene Chou</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="fun.html">For Fun</a>
+        </nav>
+    </header>
+    
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="#" method="post">
+            <p>
+              <label for="name">Your Name (required):</label><br>
+              <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+              <label for="email">Your Email:</label><br>
+              <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+              <label for="comment">Your Comment:</label><br>
+              <textarea id="comment" name="comment" rows="5" required></textarea>
+            </p>
+            <p>
+              <button type="submit">SEND</button>
+            </p>
+          </form>
+      
+          <table>
+            <tr>
+              <th>Contact Method</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>irenecho@andrew.cmu.edu</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>(408) 505-3235</td>
+            </tr>
+          </table>
+        </div>
+          
+    <footer>
+      <p>designed &amp; coded by Irene Chou &copy;<span id="copyYear"></span></p>
+    </footer>
+</body>
+</html>

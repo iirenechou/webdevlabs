@@ -55,7 +55,7 @@ function greetingFunc() {
     var h = d.getHours();
     var greeting = "";
 
-    if (h>=5 && h<12) {
+    if (h < 12) {
         console.log("Good morning")
         greeting = "Good morning, I am Irene";
     } else if (h < 18) {
@@ -85,14 +85,13 @@ function addYear() {
     document.getElementById("copyYear").textContent = new Date().getFullYear();
 }
 
-/* function showList() {
+function showList() {
     let list = document.getElementById("funList");
     let button = document.getElementById("showButton");
 
     list.style.display = "block";
     button.style.display = "none";
 }
-*/
 
 $(document).ready(function() {
     $("#toggleBio").click(function() {
@@ -126,16 +125,3 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
     if (!isValid) event.preventDefault();
 });
-
-function getAdvice(){
-    fetch('https://api.adviceslip.com/advice')
-    .then(response => response.json())
-    .then(data => {
-      const advice = data.slip.advice;
-      document.getElementById("adviceText").innerText = advice;
-    })
-    .catch(error => {
-      document.getElementById("adviceText").innerText = "Sorry, could not fetch advice at this time.";
-      console.error('Error fetching advice:', error);
-    });
-}

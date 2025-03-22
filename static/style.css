@@ -1,87 +1,136 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
-    font-size: 15;
+    font-size: 15px;
     font-weight: 100;
-    font-style: normal;
-    font-variant: normal;
     padding: 5px;
     margin: 5px;
-}
-
-#webname{
+  }
+  
+  #webname {
     background-color: #ad70a2;
-}
-
-.nav, .a{
+  }
+  
+  .nav, .a {
     text-decoration: none;
-    color:lightpink;
+    color: lightpink;
     margin-right: 15px;
-}
-
-table {
+  }
+  
+  table {
     width: fit-content;
     border-collapse: collapse;
     margin: 20px 0;
-}
-
-th {
+  }
+  
+  th {
     padding: 12px;
     background-color: #333;
     color: white;
     text-align: left;
-}
-
-td, th {
+  }
+  
+  td, th {
     border: 1px solid #ddd;
     padding: 10px;
-}
-
-tbody tr:nth-child(even) {
+  }
+  
+  tbody tr:nth-child(even) {
     background-color: #f2f2f2;
-}
-
-form * {
+  }
+  
+  form * {
     display: block;
     margin: auto;
     text-align: center;
-}
-
-form input, form textarea {
+  }
+  
+  form input, form textarea {
     width: 80%;
     padding: 8px;
     margin-bottom: 10px;
-}
-
-button {
-    background-color: pink;
-    color: white;
-    border: none;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: #fff;
     padding: 10px 20px;
-    border-radius: 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(100, 0, 70);
-}
-
-#seemorebtn {
-    display: block;
-}
-
-#funList{
-    display: none;
-}
-
-#toggleBio {
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #toggleBio {
     background-color: pink;
     color: white;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
-}
-
-.error {
+  }
+  
+  .error {
     color: red;
     font-size: 12px;
-}
+  }
+  
+  .mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .item1, .item2, .item3, .item4 {
+    flex: 1 1 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .funIMG {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+  }
+  
+  .container {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #adviceText {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .funIMG {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+  }
+  
+  button {
+    background-color: pink;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 192, 203, 0.736);
+  }
+  

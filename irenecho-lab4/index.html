@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script defer src="./static/script.js"></script>
+    <meta name="author" content="Irene Chou">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Irene Chou professional website">
+    <title>Irene Chou</title>    
+    <link rel="stylesheet" href="static/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onLoad="addYear()">
+    <header>
+        <h1 id="webname"> Irene Chou </h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="views/cv.html">CV</a>
+            <a href="views/contact.html">Contact Me</a> 
+            <a href="views/fun.html">For Fun</a>
+        </nav>
+    </header>
+
+    <div class="main">
+            <h2 id="greeting">Hi, my name is Irene</h2>
+            <img src="static/profile.png" alt="Profile Picture" width="150">
+            <div id="bio">
+                <p> Hi, I'm Irene, a passionate Information Systems student at Carnegie Mellon University. </p>
+                <p><span id="extraBio" style="display: none;">I enjoy designing web interfaces and exploring new technologies. Welcome to my professional website!</span> </p>
+                <button id="toggleBio">Read More</button>
+            </div>
+            
+        </div>
+   
+    <footer>
+        <p>designed &amp; coded by Irene Chou &copy;<span id="copyYear"></span></p>
+    </footer>
+</body>
+</html>

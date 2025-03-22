@@ -23,42 +23,48 @@
         </nav>
     </header>
     
-    <div class="main">
+    <div class="mainLayout">
+      <div class="item1">
+        <h2>Find Me</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12144.514856616352!2d-79.9528444!3d40.45028805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f221fb24dd83%3A0x5eb5d68faba8b4f9!2s5000%20Forbes%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e0!3m2!1sen!2sus!4v1742656113610!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    
+      <div class="item2">
         <h2>Contact Me</h2>
         <form id="contactForm" action="#" method="post">
-            <p>
-              <label for="name">Your Name (required):</label><br>
-              <input type="text" id="name" name="name" required>
-            </p>
-            <p>
-              <label for="email">Your Email:</label><br>
-              <input type="email" id="email" name="email" required>
-            </p>
-            <p>
-              <label for="comment">Your Comment:</label><br>
-              <textarea id="comment" name="comment" rows="5" required></textarea>
-            </p>
-            <p>
-              <button type="submit">SEND</button>
-            </p>
-          </form>
-      
-          <table>
-            <tr>
-              <th>Contact Method</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>Email</td>
-              <td>irenecho@andrew.cmu.edu</td>
-            </tr>
-            <tr>
-              <td>Phone</td>
-              <td>(408) 505-3235</td>
-            </tr>
-          </table>
-        </div>
-          
+          <p>
+            <label for="name">Your Name (required):</label><br>
+            <input type="text" id="name" name="name" required>
+          </p>
+          <p>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="comment">Your Comment:</label><br>
+            <textarea id="comment" name="comment" rows="5" required></textarea>
+          </p>
+          <p>
+            <button type="submit">SEND</button>
+          </p>
+        </form>
+        <table>
+          <tr>
+            <th>Contact Method</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>irenecho@andrew.cmu.edu</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>(408) 505-3235</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+              
     <footer>
       <p>designed &amp; coded by Irene Chou &copy;<span id="copyYear"></span></p>
     </footer>

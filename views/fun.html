@@ -23,17 +23,34 @@
           </nav>
     </header>
     
-    <div class="main">
-        <h2>Things I Love to Do for Fun</h2>
-        <button id="showButton" onclick="showList()">Click to see...</button>
-        <ul id="funList">
-            <li>Playing piano</li>
-            <li>Baking</li>
-            <li>Shopping</li>
-            <li>Trying new food</li>
-        </ul>
-    </div>
-    
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Things I Love to Do for Fun</h2>
+            <ul>
+              <li>Playing piano</li>
+              <li>Baking</li>
+              <li>Shopping</li>
+              <li>Trying new food</li>
+            </ul>
+            <!-- <button id="showButton" onclick="showList()">Click to see...</button> -->
+          </div>
+          
+          <div class="item2">
+            <img src="../static/fun.jpg" alt="Fun Image" class="funIMG">
+          </div>
+          
+          <div class="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yp9q80bXF4Y?si=3FsZun1R0-dLjiS9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        </div>
+          
+          <div class="item4">
+            <div class="container">
+              <h2>Need Some Advice?</h2>
+              <p id="adviceText">Click the button to get a random piece of advice!</p>
+              <button onclick="getAdvice()">Get Advice</button>
+            </div>
+          </div>
+        </div>          
     <footer>
         <p>designed &amp; coded by Irene Chou &copy;<span id="copyYear"></span></p>
     </footer>
